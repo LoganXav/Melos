@@ -1,6 +1,8 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 
+
+
     // Every api needs a reducer path which is enough to use in the redux store
     export const shazamCoreApi = createApi({
         reducerPath: 'shazamCoreApi',   // name of the slice of state that will store the data form the api
@@ -8,7 +10,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 			baseUrl: 'https://shazam.p.rapidapi.com',
 			// prepare headers for us so we won't have to set options each time we want to hit the api endpoint
 			prepareHeaders: (headers) => {
-				headers.set('X-RapidAPI-Key', '0e3ff0e060msh3c7860b5faba282p17e572jsn2d56a0e7768c')
+				headers.set('X-RapidAPI-Key', )
 
 				return headers;
 			},
